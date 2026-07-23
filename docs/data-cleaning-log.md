@@ -15,6 +15,7 @@ The dataset was reviewed and cleaned using Power Query before being imported int
 ### 1. Date Conversion
 
 * Converted the **Order Date** and **Ship Date** columns from text to the **Date** data type using the **English (United States)** locale to correctly interpret the original `MM/DD/YYYY` format.
+** Reformatted both columns to the ISO standard YYYY-MM-DD before exporting the cleaned dataset for SQLite compatibility.
 
 ---
 

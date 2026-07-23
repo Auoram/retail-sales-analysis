@@ -66,3 +66,52 @@ WITH regional_profit AS (
 )
 SELECT * FROM regional_profit
 ORDER BY total_profit DESC;
+
+--------------------------------------------------
+-- Business Question 6
+-- which regions/categories are underperforming?
+--------------------------------------------------
+
+SELECT Region, Category, 
+       SUM(Sales) AS total_sales, 
+       SUM(Profit) AS total_profit,
+       ROUND(SUM(Profit) / SUM(Sales) * 100, 2) AS profit_margin_pct
+FROM superstore_cleaned
+GROUP BY Region, Category
+ORDER BY profit_margin_pct ASC;
+
+--------------------------------------------------
+-- Business Question 7
+-- which segment has the best margin?
+--------------------------------------------------
+
+SELECT Segment, 
+       SUM(Sales) AS total_sales, 
+       SUM(Profit) AS total_profit,
+       ROUND(SUM(Profit) / SUM(Sales) * 100, 2) AS profit_margin_pct
+FROM superstore_cleaned
+GROUP BY Segment
+ORDER BY profit_margin_pct DESC;
+
+--------------------------------------------------
+-- Business Question 8
+-- what is the top performing sub-categories?
+--------------------------------------------------
+
+SELECT Region, [Sub-Category], SUM(Profit) AS total_profit,
+       RANK() OVER (PARTITION BY Region ORDER BY SUM(Profit) DESC) AS profit_rank
+FROM superstore_cleaned
+GROUP BY Region, [Sub-Category]
+ORDER BY Region, profit_rank;
+
+--------------------------------------------------
+-- Business Question 9
+-- Cumulative sales over time.
+--------------------------------------------------
+
+SELECT strftime('%Y-%m', "Order Date") AS month,
+       SUM(Sales) AS monthly_sales,
+       SUM(SUM(Sales)) OVER (ORDER BY strftime('%Y-%m', "Order Date")) AS running_total
+FROM superstore_cleaned
+GROUP BY month
+ORDER BY month;
