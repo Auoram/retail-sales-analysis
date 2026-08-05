@@ -20,7 +20,7 @@ Superstore Sales dataset (~9994 rows). Contains order-level retail transaction d
 6. **Delivery** — executive summary for a non-technical reader (`reports/executive-summary.pdf`)
 
 ## Dashboard Preview
-![Dashboard](screenshots/dashboard-overview.png)
+![Dashboard](screenshots/enhanced-dashboard-overview.png)
 
 ## How to Reproduce
 1. Import `data/cleaned/superstore_cleaned.csv` into SQLite (or your preferred SQL tool)
