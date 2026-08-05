@@ -2,39 +2,39 @@
 
 ## Headline Insight
 
-Although overall sales are strong, profitability varies considerably across regions, categories, and customer segments. High discount levels are associated with reduced profitability, indicating opportunities to improve pricing strategy.
+Although overall sales performance is strong, profitability varies significantly across regions, product categories, and customer segments. The analysis indicates that higher discount levels are associated with reduced profitability, highlighting opportunities to improve pricing and discount strategies.
 
 ---
 
 ## Key Findings
 
-1. The West region generated the highest overall profit, while the Central region showed comparatively weaker profitability.
+1. The **West** region generated the highest overall profit, while the **Central** region showed comparatively lower profitability.
 
-2. The Technology category delivered the highest profit, whereas Furniture generated lower profit despite substantial sales.
+2. The **Technology** category produced the highest overall profit, whereas the **Furniture** category generated lower profit despite strong sales performance.
 
-3. Orders with higher discount levels were more likely to generate low or negative profit, suggesting that aggressive discounting reduces profitability.
+3. Orders with higher discount levels were more likely to result in low or negative profit, suggesting that aggressive discounting has a significant impact on profitability.
 
-4. Consumer customers generated the highest overall sales volume, while Corporate customers achieved stronger average profit margins.
+4. The **Consumer** segment generated the highest sales volume, while the **Corporate** segment achieved stronger average profit margins.
 
 ---
 
 ## Recommendations
 
-- Review discount policies for products receiving discounts above 30%, particularly within low-profit categories.
-- Focus marketing efforts on high-margin categories such as Technology.
-- Investigate the causes of lower profitability in underperforming regions and categories.
-- Continue monitoring monthly sales trends to identify seasonal opportunities and optimize inventory planning.
+* Review discount policies, particularly for products receiving discounts above 30%, to improve overall profitability.
+* Prioritize marketing and inventory investment in high-performing categories such as **Technology**.
+* Investigate the underlying causes of lower profitability in underperforming regions and product categories.
+* Continue monitoring monthly sales trends to identify seasonal opportunities and support more effective inventory planning.
 
 ---
 
 ## Methodology
 
-This analysis was performed using the Superstore sales dataset.
+This analysis was conducted using the **Superstore Sales** dataset containing approximately **9,994** retail sales records.
 
-Tools used:
+### Tools Used
 
-- SQLite for SQL analysis
-- Microsoft Excel (Pivot Tables, Power Query, formulas)
-- Power BI for dashboard development
+* **SQLite** for SQL queries and data analysis
+* **Microsoft Excel** (Power Query, Pivot Tables, and formulas) for data cleaning and KPI analysis
+* **Microsoft Power BI** for interactive dashboard development and data visualization
 
-The analysis focused on sales performance, profitability, customer segments, regional performance, discount impact, and monthly sales trends.
+The analysis focused on regional performance, product category profitability, customer segment performance, discount impact, and monthly sales trends to support data-driven business decision-making.
